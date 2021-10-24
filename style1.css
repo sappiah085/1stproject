@@ -1,0 +1,110 @@
+* {
+  margin: 0%;
+}
+body {
+  background: radial-gradient(
+    circle at left bottom,
+    rgb(0, 255, 13),
+    rgb(255, 85, 6)
+  );
+}
+html {
+  height: 100vh;
+  font-size: 65%;
+}
+nav {
+  width: 100%;
+  min-width: 600px;
+  height: 7em;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+ul {
+  list-style: none;
+  text-align: right;
+  position: relative;
+  top: 0.4em;
+  margin-right: 3em;
+  font-size: 3rem;
+}
+li {
+  padding: 0.2em;
+  display: inline-block;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+}
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.icon {
+  height: 10em;
+  border-radius: 50px;
+}
+.name {
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.section {
+  top: 15em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 600px;
+}
+.aside {
+  position: relative;
+  top: 17em;
+}
+.aside > input {
+  border: none;
+  outline: none;
+}
+[type="search"] {
+  width: 40em;
+  padding: 2em;
+  margin-right: 1em;
+  border-radius: 20px;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+[type="submit"] {
+  padding: 1em;
+  width: 7em;
+  border-radius: 20px;
+  background-color: #0ca34b;
+  color: white;
+  font-weight: 400;
+  font-size: 2rem;
+  text-transform: uppercase;
+  transition-property: inset;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+input::placeholder {
+  color: white;
+  font-weight: 400;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+[type="submit"]:hover {
+  background-color: rgb(9, 46, 9);
+}
+[type="search"]:focus{
+  background-color: rgba(126, 33, 33, 0.452);
+}

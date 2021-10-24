@@ -1,0 +1,196 @@
+*{
+    margin: 0%;
+}
+nav{
+    box-shadow: 0 1px 5px;
+}
+.icon{
+    margin: 12% 0%;
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.details{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.brand{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 4%;
+    margin-left: 9%;
+    text-align: center;
+    font-size: larger;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 900;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+.link{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav-flex-container{
+    margin: 0 1.5%;
+    display: flex;
+    justify-content: space-between;
+    min-width: 400px;
+}
+header{
+    top: 0%;
+   background-color: transparent;
+   position: sticky;
+   height:48vh;
+   width: 100%;
+}
+li{
+    background-color: transparent;
+    margin: 10% 2%;
+    padding: 7% 0 4% 10%;
+    text-transform: uppercase;
+    color: blueviolet;
+}
+body{
+    background: radial-gradient(circle at bottom left, rgba(12, 45, 67, 0.9), rgba(193, 163, 221, 0.678));
+    width: 100%;
+    min-width: 600px;
+}
+section{
+    text-align: center;
+    transform: translateY(-9px);
+}
+form{
+    box-shadow: 1px 3px 8px rgba(224, 205, 205, 0.432);
+    height: 360px;
+    width: 30%;
+    margin-left: 35%;
+}
+label{
+    font-weight: 900;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+}
+form > input{
+    padding: 3%;
+    width: 50%;
+    margin: 1.5%;
+    position: relative;
+    border: none;
+    background-color: rgba(113, 159, 211, 0.274);
+    border-radius: 8px;
+    outline: none;
+}
+form > input:first-child{
+    margin-top: 10%;
+}
+form > input::placeholder{
+    color: white;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+form > input:focus:required {
+    background-color: rgba(148, 67, 67, 0.781);
+}
+input[type="submit"]{
+    color: white;
+    font-weight: 400;
+    width: 20%;
+    letter-spacing: 1px;
+    font-size: medium;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: rgba(42, 196, 88, 0.521);
+}
+span{
+   position: relative;
+   top: 10%;
+   font-size: 25px;
+   color: white;
+}
+section  a{
+    position: relative;
+    top: 10%;
+    margin-left: 2%;
+    font-size: 25px;
+}
+a:link{
+    color: rgba(235, 14, 124, 0.541);
+}
+a:hover{
+    color: rgb(211, 24, 24);
+}
+a:active{
+    color: aquamarine;
+}
+nav a{
+font-size: larger;
+font-weight: 900;
+}
+nav div ul li a::after{
+     content: "";
+     width: 0%;
+     height: 3px;
+     background-color: rgba(24, 17, 23, 0.616);
+     display: block;
+}
+nav div ul li a:hover::after{
+    animation-name: line;
+    animation-duration: 0.5s;
+    animation-iteration-count: 3;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in;
+} 
+.contacts button{
+    display: block;
+    border: none;
+    text-align: center;
+    width: 200px;
+    height: 56px;
+    background-color: rgba(141, 81, 141, 0.493);
+    box-shadow: 0px 0px 2px white ;
+    margin: 2%;
+    color: white;
+    font-size: medium;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.menu{
+    position: absolute;
+    top: 20%;
+    right: 0.5%;
+    display: none;
+}
+.contacts:hover .menu{
+    display: block;
+}
+.contacts button:hover{
+    background-color: blueviolet;
+}
+footer{
+    text-align: center;
+    position: relative;
+    top: 5vh;
+    background-color: rgba(143, 17, 143, 0.733);
+    padding: 0.8%;
+}
+@keyframes line {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
